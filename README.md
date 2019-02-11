@@ -10,7 +10,7 @@ To process a local file, say `myfile.jinja`, mount the file into the /build dire
 ```bash
 echo "Hello {{ ME }}" > sayhello.jinja
 
-docker run -it -v /path/to/sayhello.jina:/build/template.jinja -e ME=nihil0 nihil0/j2cli 
+docker run -it -v /path/to/sayhello.jinja:/build/template.jinja -e ME=nihil0 nihil0/j2cli 
 
 # Hello nihil0
 ```
